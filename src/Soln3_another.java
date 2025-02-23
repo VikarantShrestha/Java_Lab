@@ -2,15 +2,15 @@ import java.util.ArrayList;
 public class Soln3_another
 {
 	 ArrayList<Integer> primes = new ArrayList<>();
-	 public void checkprime(int n)
+	 public boolean checkprime(int n)
 	 {
 	 	boolean isPrime=true;
-     	for(int j=2; j<n; j++)
+     	for(int j=2; j<=Math.sqrt(n); j++)
 	 	{
-	    	if(j==n)
-	    	{
-		  		continue;
-	    	}
+	    	// if(j==n)
+	    	// {
+		  	// 	continue;
+	    	// }
 	    	if(n%j==0)
 	    	{
 		  		isPrime=false;
@@ -21,7 +21,12 @@ public class Soln3_another
 	    if(isPrime==true)
 	    {
 			primes.add(n);
+			return true;
 	    }
+		else
+		{
+			return false;
+		}
 	 }
 
 	 public void show()
