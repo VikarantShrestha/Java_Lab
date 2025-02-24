@@ -9,12 +9,7 @@ public class Soln8
         System.out.print("Enter second num : ");
         int b= sc.nextInt();
 
-        while(b!=0)
-        {
-            int temp=b;
-            b=a%b;
-            a=temp;
-        }
-        System.out.println(a);
+        Soln8_another ob = new Soln8_another();
+        System.out.println(ob.gcd(a, b));
     }
 }

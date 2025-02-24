@@ -8,12 +8,7 @@ public class Soln11
         int base = sc.nextInt();
         System.out.print("Enter exponent : ");
         int expo = sc.nextInt();
-        int power=1;
-
-        for(int i=1; i<=expo; i++)
-        {
-            power *= base;
-        }
-        System.out.println(power);
+        Soln11_another ob = new Soln11_another();
+        System.out.println(ob.findPower(base, expo));
     }    
 }

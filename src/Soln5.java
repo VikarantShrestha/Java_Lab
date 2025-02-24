@@ -7,13 +7,13 @@ public class Soln5
         System.out.print("Enter number upto which u want to print the sequence : ");
         int n=sc.nextInt();
         int a=0, b=1, ev=-1;
+        Soln5_another ob = new Soln5_another();
 
         for(int i=1;i<=n;i++)
         {
             if(i%2==0)
             {
-                System.out.print(ev+ " ");
-                ev -=3;
+                ev=ob.evenpart(ev);
             }
             else
             {

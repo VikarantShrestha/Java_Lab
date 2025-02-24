@@ -6,15 +6,9 @@ public class Soln14
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a num : ");
         int n=sc.nextInt();
-        int temp=n, rev=0;
+        Soln14_another ob = new Soln14_another();
 
-        while(temp!=0)
-        {
-            int rem= temp%10;
-            rev = rev*10+rem;
-            temp=temp/10;
-        }
-        if(n==rev)
+        if(n==ob.reverse(n))
         {
             System.out.println("Palindrome");
         }

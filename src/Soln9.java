@@ -7,12 +7,11 @@ public class Soln9
         System.out.print("Enter value upto which u want sum : ");
         int n=sc.nextInt();
         float sum=0;
-        int fact=1;
+        Soln9_another ob = new Soln9_another();
         
         for(int i=1; i<=n; i++)
         {
-            fact*=i;
-            sum += (1.0/fact);
+            sum += (1.0/ob.calcFactByPosn(i));
         }
 
         System.out.println(sum);

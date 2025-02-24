@@ -6,13 +6,8 @@ public class Soln12
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a num to find its factors : ");
         int n=sc.nextInt();
-
-        for(int i=1;i<=n;i++)
-        {
-            if(n%i==0)
-            {
-                System.out.println(i);
-            }
-        }
+        Soln12_another ob = new Soln12_another();
+        ob.showFactors(n);
+        
     }    
 }

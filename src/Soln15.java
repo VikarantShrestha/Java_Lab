@@ -1,13 +1,12 @@
-import java.util.Random;
 public class Soln15 
 {
     public static void main(String arg[])
-    {
-        Random r = new Random();    
+    {  
+        Soln15_another ob = new Soln15_another();
+
         for(int i=1; i<=5; i++)
         {
-            int n = r.nextInt(100)+1;
-            System.out.println(n);
+            System.out.println(ob.genrandom());
         }
     }    
 }

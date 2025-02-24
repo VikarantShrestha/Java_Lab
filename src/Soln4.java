@@ -8,7 +8,7 @@ public class Soln4
         System.out.print("Enter number of terms upto which u want to print the sequence : ");
         int n = sc.nextInt();
         int a=0, b=1;
-        int ev=2;
+        Soln4_another ob = new Soln4_another();
 
         for(int i=1; i<=n; i++)
         {
@@ -21,8 +21,7 @@ public class Soln4
             }
             else
             {
-                System.out.print(ev+ " ");
-                ev*=2;
+                ob.evenpart();
             }
         }
     }    
